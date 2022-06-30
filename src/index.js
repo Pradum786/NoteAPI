@@ -19,10 +19,10 @@ app.get('/',(req, res) => {
     res.send('Note API From Pradum786');
 })
 
-const PORT =process.env.Port || 3000;
+const PORT =process.env.Port || 5000;
 
 mongoose.connect(process.env.MONGO_URL).then(()=> {
-    app.listen(PORT ,()=>{console.log("listening on port "+ PORT)})
+    app.listen(PORT ,()=>{console.log("listening on port " + PORT)})
 
 }).catch(err => {console.log(err);})
 
