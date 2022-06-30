@@ -43,7 +43,7 @@ const updateNote = async (req,res) => {
 
 };
 
-const deleteNote =(req,res) => {
+const deleteNote = async (req,res) => {
 
     const id = req.params.id;
     try {
@@ -59,11 +59,11 @@ const deleteNote =(req,res) => {
 
 };
 
-const getNotes =(req,res)=>{
+const getNotes =async (req,res)=>{
 
     try {
         
-        const notes = noteModel.find({userId: req.userId})
+        const notes = await noteModel.find({userId: req.userId})
         res.status(200).json(notes);
 
     } catch (error) {
