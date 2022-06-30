@@ -10,7 +10,7 @@ dotenv.config();
 const mongoose = require('mongoose');
 
 app.use(express.json());
-app.user(cors());
+app.use(cors());
 
 app.use('/api/users',userRouter);
 app.use('/api/notes',noteRouter);
