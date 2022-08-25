@@ -26,11 +26,11 @@ const updateNote = async (req,res) => {
 
     const id = req.params.id;
     const { title, description } = req.body;
-    const updateNote=noteModel({
+    const updateNote={
         title: title,
         description: description,
         userId: req.userId
-    })
+    }
     try {
         await noteModel.findByIdAndUpdate(id,updateNote,{new:true});
         res.status(200).json(note);
