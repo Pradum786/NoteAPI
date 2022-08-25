@@ -7,9 +7,9 @@ noteRouter.get('/',auth, getNotes)
 
 noteRouter.post('/',auth,createNote)
 
-noteRouter.delete('/',auth,deleteNote)
+noteRouter.delete('/:id',auth,deleteNote)
 
-noteRouter.put('/',auth,updateNote);
+noteRouter.put('/:id',auth,updateNote);
 
 
 
