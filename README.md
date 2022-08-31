@@ -8,5 +8,5 @@ Simple API to showcase CRUD operations using Express JS with Authentication usin
 * CRUD operations for Notes (GET, POST, PUT, DELETE)
 # 🚀 About this series
 * Rest API (Node JS)
-* [Android App](https://github.com/Pradum786/SampleNote)
+* [Android App](https://github.com/Pradum786/SampleNoteApp)
 
